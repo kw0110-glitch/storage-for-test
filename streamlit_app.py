@@ -43,7 +43,7 @@ prompt = st.text_input("이미지 프롬프트를 입력하세요", key="prompt"
 if st.button("이미지 생성하기"):
     if not api_key:
         st.error("먼저 OpenAI API Key를 입력하세요.")
-    elif not image_prompt:
+    elif not prompt:
         st.error("이미지 프롬프트를 입력하세요.")
     else:
         try:
